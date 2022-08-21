@@ -45,7 +45,7 @@ while game_is_on:
         print_turtle(guess, int(state_data.x), int(state_data.y))
         found_states += 1
         guessed_states.append(guess)
-    if found_states == 50:
+    if found_states == ALL_STATES:
         game_over()
         game_is_on = False
 
